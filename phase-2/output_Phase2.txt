@@ -1,0 +1,32 @@
+
+Program Terminated abnormally		Out of Data
+IC = 1	Toggle = 0	TLC = 0	TTC = 2	TTL = 16	TLL = 4	IR = GD20
+
+NOT                                     
+
+Program Terminated abnormally		Line Limit Exceeded
+IC = 9	Toggle = 0	TLC = 2	TTC = 13	TTL = 20	TLL = 1	IR = PD30
+
+
+Program Terminated abnormally		Time Limit Exceeded
+IC = 1	Toggle = 0	TLC = 0	TTC = 2	TTL = 1	TLL = 1	IR = GD10
+
+8                                       
+7                                       
+6                                       
+
+Program Terminated Successfully
+IC = 7	Toggle = 0	TLC = 3	TTC = 10	TTL = 10	TLL = 3	IR = H   
+
+
+Program Terminated abnormally		Operation Code Error
+IC = 1	Toggle = 0	TLC = 0	TTC = 1	TTL = 10	TLL = 2	IR = GC20
+
+
+Program Terminated abnormally		Operand Error
+IC = 1	Toggle = 0	TLC = 0	TTC = 0	TTL = 10	TLL = 2	IR = GD2o
+
+
+Program Terminated abnormally		Invalid Page Fault
+IC = 2	Toggle = 0	TLC = 0	TTC = 3	TTL = 20	TLL = 3	IR = LR52
+
