@@ -1,10 +1,10 @@
 $AMJ010200210001                         
 GD30LR36SR40LR35SR41LR34SR42LR33SR43LR32
 SR44LR31SR45LR30SR46LR39SR47SR38SR49PD40 
-H                                        
+H                  
 $DTA                                     
 AMA  PANANAL A CPLANN A A MA                    
-$END0102                                     
+$END0102                                  
 $AMJ020100120003                                   
 GD20LR20GD30CR33BT07GD40PD40PD20PD30GD40               
 PD40H                                       
@@ -76,4 +76,4 @@ GD20LR26CR20BT06GD30PD30PD20H
 $DTA                                                      
 RAM  IS OLDER THAN  SHRIRAM                                 
 NOT IN EXISTANCE                                                    
-$END0102
+$END0102                 

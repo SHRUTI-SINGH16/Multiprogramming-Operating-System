@@ -8,10 +8,10 @@ class OS{
 private:
     char MAT[100][4]; //External Memory
     char IR[4]; //2 bits operation and next 2 bits memory. Instruction Register
-    char R[4]; //GPR
+    char R[4]; //GENERAL PURPOSE REGISTER
     string buffer;
-    int IC,SI,m;
-    bool C;
+    int IC,SI,m; //INSTRUCTION COUNTER REGISTER, SERVICE INTERRUPT, 
+    bool C; //TOGGLE
 public:
     void INIT();
     void LOAD();
@@ -251,8 +251,9 @@ void OS::TERMINATE(){
 }
 
 int main(){
-    OS os;
-    os.LOAD();
+    OS oss;
+    oss.LOAD();
+    oss.PrintM();
     MyWriteFile.close();
     return  0 ;
 }
