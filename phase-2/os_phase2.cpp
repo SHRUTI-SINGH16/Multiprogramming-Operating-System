@@ -104,6 +104,7 @@ void MOS(){
         }
 
         int frame = ALLOCATE();
+        cout<<"frame = "<<frame<<endl;
         while (visited[frame] != 0){
             frame = ALLOCATE();
         }
@@ -182,7 +183,9 @@ void EXECUTE(){
             outFile<<"\n\n";
             break;
         }
+        cout<<"ic="<<IC<<endl;
         RA = ADDRESSMAP(IC);
+        cout<<"RA "<<RA<<endl;
 
         if (M[RA][0] != 'H' && (!isdigit(M[RA][2]) || !isdigit(M[RA][3]))){
             EM = 5;
@@ -200,6 +203,7 @@ void EXECUTE(){
 
         int add = IR[2] - 48;
         add = (add * 10) + (IR[3] - 48);
+        cout<<"add "<<add<<endl;
 
         if ((IR[0] == 'G' && IR[1] == 'D') || (IR[0] == 'S' && IR[1] == 'R')){
             P.TTC += 2;
@@ -219,6 +223,7 @@ void EXECUTE(){
         }
         if (IR[0] == 'L' && IR[1] == 'R'){
             int ra = ADDRESSMAP(add);
+            cout<<"ra "<<ra<<endl;
             if (ra == -1){
                 EM = 6;
                 TERMINATE(6);
@@ -366,7 +371,7 @@ void LOAD(){
 
             M[i][0] = ' ';
             M[i][1] = ' ';
-            M[i][2] = temp + 48;
+            M[i][2] = temp + 48;  //48 here means 0
             M[i][3] = frameNo % 10 + 48;
 
             int len = 0;
